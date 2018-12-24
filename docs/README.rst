@@ -63,5 +63,21 @@ After these steps are completed, the documentation is rendered in HTML format
 in `docs/_build/html`.  In particular, you can point your browser at
 `docs/_build/html/index.html` to read the docs and review any changes you made.
 
+## Building using docker compose
+
+The ci folder in the main arrow folder contains the docker compose file docker-compose.yml, in 
+order to build the documentations:
+
+```
+docker-compose build cpp 
+docker-compose build python 
+docker-compose run docs 
+```
+
+The final output is stored under: site/asf-site/docs/latest
+
+
+
+
 [1]: http://www.doxygen.nl
 [2]: http://www.sphinx-doc.org/
