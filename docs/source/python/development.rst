@@ -429,10 +429,13 @@ You can use Docker to build the documentation:
 
   docker-compose build cpp 
   docker-compose build python 
-  docker-compose run docs 
+  docker-compose build docs
+  docker-compose run docs
 
 
-The final output is located under::
+The final output is located under [#]_::
 
-  site/asf-site/docs/latest
+  docs/_build/html
 
+
+.. [#] A copy of this can be found under **site/asf-site/docs/latest** (only relevant for uploading to the website)
